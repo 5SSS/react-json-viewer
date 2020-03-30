@@ -1,7 +1,7 @@
 import React from 'react';
 import { needFormat } from './utils.js';
 import ComplexTree from './complexTree.js';
-import NormalTree from './normalTree.js';
+import NormalTree from './normalTree.jsx';
 
 export default function Tree(props) {
   let { type } = props;
