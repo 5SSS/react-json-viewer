@@ -1,6 +1,6 @@
 import React from 'react';
 import { needFormat } from './utils.js';
-import ComplexTree from './complexTree.js';
+import ComplexTree from './complexTree.jsx';
 import NormalTree from './normalTree.jsx';
 
 export default function Tree(props) {
