@@ -1,6 +1,6 @@
 {
   "name": "react-json-viewer-cool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React json view plugin, supports expansion and hiding.use react hooks.",
   "main": "index.js",
   "scripts": {
