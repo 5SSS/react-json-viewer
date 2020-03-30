@@ -1,6 +1,6 @@
 {
   "name": "react-json-viewer-cool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React json view plugin, supports expansion and hiding.use react hooks.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,27 @@
   "bugs": {
     "url": "https://github.com/5SSS/react-json-viewer/issues"
   },
-  "homepage": "https://github.com/5SSS/react-json-viewer#readme"
+  "homepage": "https://github.com/5SSS/react-json-viewer#readme",
+  "keywords": [
+    "array-viewer",
+    "base-16",
+    "component",
+    "interactive",
+    "interactive-json",
+    "json",
+    "json-component",
+    "json-display",
+    "json-tree",
+    "json-view",
+    "json-viewer",
+    "json-inspector",
+    "json-tree",
+    "react",
+    "react-component",
+    "react-json",
+    "theme",
+    "tree",
+    "tree-view",
+    "treeview"
+  ]
 }
