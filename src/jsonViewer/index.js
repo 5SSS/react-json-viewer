@@ -13,6 +13,7 @@ class JsonView extends React.Component {
   render() {
     let { data } = this.props;
     let _data = null;
+
     if (needFormat(getType(data))) {
       _data = parseObjectToList(data);
     }
@@ -28,7 +29,6 @@ class JsonView extends React.Component {
         </pre>
       );
     }
-
     return <div className="x-json-view">{data + ''}</div>;
   }
 }
