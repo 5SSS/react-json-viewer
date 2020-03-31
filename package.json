@@ -1,9 +1,10 @@
 {
   "name": "react-json-viewer-cool",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React json view plugin, supports expansion and hiding.use react hooks.",
-  "main": "index.js",
+  "main": "./lib/jsonViewer/index.js",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -37,5 +38,22 @@
     "tree",
     "tree-view",
     "treeview"
-  ]
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "webpack-cli": "^3.3.11"
+  }
 }

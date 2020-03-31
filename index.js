@@ -1,2 +1,2 @@
 'use strict';
-module.exports = require('./src/jsonViewer/index.jsx');
+module.exports = require('./lib/jsonViewer/index.js');
