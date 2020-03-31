@@ -1,2 +1,3 @@
 'use strict';
-module.exports = require('./lib/jsonViewer/index.js');
+const ReactJsonViewerCool = require('./src/jsonViewer/index.js');
+module.exports = ReactJsonViewerCool;

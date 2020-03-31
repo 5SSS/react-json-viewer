@@ -9,28 +9,28 @@ import {
 import Tree from './tree.js';
 import './style.css';
 
-export default function JsonView(props) {
-  let { data } = props;
-
-  let [list, setList] = useState([]);
-
-  useEffect(() => {
+class JsonView extends React.Component {
+  render() {
+    let { data } = this.props;
+    let _data = null;
     if (needFormat(getType(data))) {
-      setList(parseObjectToList(data));
+      _data = parseObjectToList(data);
     }
-  }, [data]);
 
-  if (isArray(data) || isObject(data)) {
-    return (
-      <pre className="x-json-view">
-        <p className="x-json-outter">{isArray(data) ? '[' : '{'}</p>
-        {list.map((item, index) => (
-          <Tree key={index} {...item} />
-        ))}
-        <p className="x-json-outter">{isArray(data) ? ']' : '}'}</p>
-      </pre>
-    );
+    if (isArray(data) || isObject(data)) {
+      return (
+        <pre className="x-json-view">
+          <p className="x-json-outter">{isArray(data) ? '[' : '{'}</p>
+          {_data.map((item, index) => (
+            <Tree key={index} {...item} />
+          ))}
+          <p className="x-json-outter">{isArray(data) ? ']' : '}'}</p>
+        </pre>
+      );
+    }
+
+    return <div className="x-json-view">{data + ''}</div>;
   }
-
-  return <div className="x-json-view">{data + ''}</div>;
 }
+
+export default JsonView;
